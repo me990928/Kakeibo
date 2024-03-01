@@ -14,20 +14,21 @@ struct ContentView: View {
     
     @State var addSheetFlag: Bool = false
     
-    let testVM = TestViewModel()
+    @StateObject var testVM = TestViewModel()
 
     var body: some View {
         NavigationSplitView {
-            List(){Text("YYYY-MM")}
-                .onAppear(){
-                    
-                }
+            SideBarView(testVM: testVM)
         } content: {
-            Text("YYYY-MM-DD").toolbar {
-                ToolbarItem {
-                    Button(action: {}) {
-                        Image(systemName: "plus")
-                    }
+//            Text("YYYY-MM-DD")
+//            }
+            List(){
+                ForEach(testVM.model.kakeiboModel){item in
+                    Button(action: {
+                        
+                    }, label: {
+                        Text(MyTools().changeDateString(item.createAt, "yyyy/MM/dd"))
+                    }).buttonStyle(.borderless)
                 }
             }
         } detail: {
