@@ -12,4 +12,7 @@ struct TestModel {
     var kakeiboLargeSmallCategory: [KakeiboLargeSmallCategory]
     var largeCategory: [LargeCategory]
     var smallCategory: [SmallCategory]
+    
+    // flag
+    var selectedMonth: String = ""
 }
