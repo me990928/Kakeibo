@@ -20,6 +20,11 @@
 		D21CC9592B8D808D00A91864 /* DataCRUDTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CC9582B8D808D00A91864 /* DataCRUDTest.swift */; };
 		D21CC95C2B91A99C00A91864 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CC95B2B91A99C00A91864 /* TestModel.swift */; };
 		D21CC95E2B91AE3400A91864 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CC95D2B91AE3400A91864 /* TestViewModel.swift */; };
+		D21CC9622B91C1B900A91864 /* MyTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CC9612B91C1B900A91864 /* MyTools.swift */; };
+		D21CC9662B91C2FD00A91864 /* DataCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CC9642B91C2FD00A91864 /* DataCRUD.swift */; };
+		D21CC9672B91C2FD00A91864 /* MyTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CC9652B91C2FD00A91864 /* MyTools.swift */; };
+		D21CC9702B91C4AB00A91864 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CC96F2B91C4AB00A91864 /* SideBarView.swift */; };
+		D21CC9722B91C61200A91864 /* ContentBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CC9712B91C61200A91864 /* ContentBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		D21CC9582B8D808D00A91864 /* DataCRUDTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCRUDTest.swift; sourceTree = "<group>"; };
 		D21CC95B2B91A99C00A91864 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		D21CC95D2B91AE3400A91864 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		D21CC9612B91C1B900A91864 /* MyTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTools.swift; sourceTree = "<group>"; };
+		D21CC9642B91C2FD00A91864 /* DataCRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCRUD.swift; sourceTree = "<group>"; };
+		D21CC9652B91C2FD00A91864 /* MyTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTools.swift; sourceTree = "<group>"; };
+		D21CC96F2B91C4AB00A91864 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
+		D21CC9712B91C61200A91864 /* ContentBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +162,7 @@
 		D21CC94F2B8D75A100A91864 /* SideBarGroup */ = {
 			isa = PBXGroup;
 			children = (
+				D21CC96F2B91C4AB00A91864 /* SideBarView.swift */,
 			);
 			path = SideBarGroup;
 			sourceTree = "<group>";
@@ -159,6 +170,7 @@
 		D21CC9502B8D75B000A91864 /* ContentsGroup */ = {
 			isa = PBXGroup;
 			children = (
+				D21CC9712B91C61200A91864 /* ContentBarView.swift */,
 			);
 			path = ContentsGroup;
 			sourceTree = "<group>";
@@ -174,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				D21CC9562B8D7E8500A91864 /* DataCRUD.swift */,
+				D21CC9612B91C1B900A91864 /* MyTools.swift */,
+				D21CC9632B91C2FD00A91864 /* Tools */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -185,6 +199,15 @@
 				D21CC95D2B91AE3400A91864 /* TestViewModel.swift */,
 			);
 			path = TestData;
+			sourceTree = "<group>";
+		};
+		D21CC9632B91C2FD00A91864 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D21CC9642B91C2FD00A91864 /* DataCRUD.swift */,
+				D21CC9652B91C2FD00A91864 /* MyTools.swift */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,13 +340,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21CC9662B91C2FD00A91864 /* DataCRUD.swift in Sources */,
 				D21CC9542B8D760400A91864 /* KakeiboModel.swift in Sources */,
+				D21CC9722B91C61200A91864 /* ContentBarView.swift in Sources */,
+				D21CC9622B91C1B900A91864 /* MyTools.swift in Sources */,
 				D21CC9572B8D7E8500A91864 /* DataCRUD.swift in Sources */,
 				D21CC9252B8D70DA00A91864 /* ContentView.swift in Sources */,
+				D21CC9702B91C4AB00A91864 /* SideBarView.swift in Sources */,
 				D21CC95C2B91A99C00A91864 /* TestModel.swift in Sources */,
 				D21CC9272B8D70DA00A91864 /* Item.swift in Sources */,
 				D21CC95E2B91AE3400A91864 /* TestViewModel.swift in Sources */,
 				D21CC9232B8D70DA00A91864 /* KakeiboApp.swift in Sources */,
+				D21CC9672B91C2FD00A91864 /* MyTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
