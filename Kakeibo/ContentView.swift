@@ -20,17 +20,7 @@ struct ContentView: View {
         NavigationSplitView {
             SideBarView(testVM: testVM)
         } content: {
-//            Text("YYYY-MM-DD")
-//            }
-            List(){
-                ForEach(testVM.model.kakeiboModel){item in
-                    Button(action: {
-                        
-                    }, label: {
-                        Text(MyTools().changeDateString(item.createAt, "yyyy/MM/dd"))
-                    }).buttonStyle(.borderless)
-                }
-            }
+            ContentBarView(testVM: testVM)
         } detail: {
             Text("Main Contents")
         }.sheet(isPresented: $addSheetFlag, content: {

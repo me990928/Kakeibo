@@ -13,9 +13,12 @@ struct SideBarView: View {
     
     var body: some View {
         List(){
+            NavigationLink("ALL") {
+                ContentBarView(testVM: testVM)
+            }
             ForEach(testVM.model.kakeiboModel){item in
                 NavigationLink(MyTools().changeDateString(item.createAt, "yyyy/MM")) {
-                    
+                    ContentBarView(testVM: testVM)
                 }
             }
         }
