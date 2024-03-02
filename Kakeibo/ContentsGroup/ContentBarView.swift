@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ContentBarView: View {
+    
     @ObservedObject var testVM: TestViewModel
+    var selectDate: String
+    
     var body: some View {
         List(){
-            ForEach(testVM.model.kakeiboModel){item in
-                NavigationLink(MyTools().changeDateString(item.createAt, "yyyy/MM/dd")) {
+            ForEach(MyTools().getDayDates(yearMonth: selectDate), id: \.self){item in
+                NavigationLink(item) {
                     
                 }
             }
@@ -21,5 +24,5 @@ struct ContentBarView: View {
 }
 
 #Preview {
-    ContentBarView(testVM: TestViewModel())
+    ContentBarView(testVM: TestViewModel(), selectDate: "1999/09")
 }
