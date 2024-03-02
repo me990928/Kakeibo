@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
+    
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
     
@@ -20,7 +21,7 @@ struct ContentView: View {
         NavigationSplitView {
             SideBarView(testVM: testVM)
         } content: {
-            ContentBarView(testVM: testVM)
+            
         } detail: {
             Text("Main Contents")
         }.sheet(isPresented: $addSheetFlag, content: {
@@ -28,7 +29,6 @@ struct ContentView: View {
             VStack{
                 // 大カテゴリ
                 Divider()
-                
                 // 小カテゴリ
                 Divider()
                 // 家計簿挿入
