@@ -112,14 +112,14 @@ class MyTools {
                 if let dayDate = calendar.date(bySetting: .day, value: day, of: date) {
                     let dateString = outputDateFormatter.string(from: dayDate)
                     dateStrings.append(dateString)
-                    print(dateString)
+//                    print(dateString)
                 }
             }
         } else {
             print("Invalid date format")
         }
 
-        print(dateStrings)
+//        print(dateStrings)
         
         return dateStrings
     }
