@@ -13,6 +13,7 @@ struct TestModel {
     var largeCategory: [LargeCategory]
     var smallCategory: [SmallCategory]
     
-    // flag
-    var selectedMonth: String = ""
+    // selector
+    var selectedMonth: [String] = MyTools().getYearDate(year:  (Int(MyTools().changeDateString(Date(), "yyyy")) ?? 2000))
+    var selectedDate: [String] = MyTools().getDayDates(yearMonth: MyTools().changeDateString(Date(), "yyyy/MM"))
 }

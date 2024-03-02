@@ -33,6 +33,6 @@ class TestViewModel: ObservableObject {
         self.model.kakeiboModel.append(KakeiboModel(id: "case2", name: "ファミマ弁当", price: 300, createAt: MyTools().changeStringDate("2024/02/20 11:22:33"), updateAt: MyTools().changeStringDate("2024/02/20 11:22:33"), categoryId: "c2", check: false))
         self.model.kakeiboModel.append(KakeiboModel(id: "case3", name: "白菜", price: 100, createAt: MyTools().changeStringDate("2024/02/20 11:23:33"), updateAt: MyTools().changeStringDate("2024/02/20 11:23:33"), categoryId: "c3", check: false))
         self.model.kakeiboModel.append(KakeiboModel(id: "case4", name: "セブンイレブン弁当", price: 500, createAt: MyTools().changeStringDate("2024/03/20 11:24:33"), updateAt: MyTools().changeStringDate("2024/03/21 11:24:33"), categoryId: "c4", check: false))
-        self.model.kakeiboModel.append(KakeiboModel(id: "case5", name: "フレンチレストラン", price: 5000, createAt: MyTools().changeStringDate("2024/03/20 11:25:33"), updateAt: MyTools().changeStringDate("2024/03/20 11:25:33"), categoryId: "c5", check: false))
+        self.model.kakeiboModel.append(KakeiboModel(id: "case5", name: "フレンチレストラン", price: 5000, createAt: MyTools().changeStringDate("2023/03/20 11:25:33"), updateAt: MyTools().changeStringDate("2023/03/20 11:25:33"), categoryId: "c5", check: false))
     }
 }
