@@ -21,7 +21,7 @@ struct ContentView: View {
         NavigationSplitView {
             SideBarView(testVM: testVM)
         } content: {
-            
+            ContentBarView(testVM: testVM, selectDate: MyTools().changeDateString(Date(), "yyyy/MM"))
         } detail: {
             Text("Main Contents")
         }.sheet(isPresented: $addSheetFlag, content: {

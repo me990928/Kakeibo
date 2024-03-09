@@ -16,7 +16,7 @@ struct ContentBarView: View {
         List(){
             ForEach(MyTools().getDayDates(yearMonth: selectDate), id: \.self){item in
                 NavigationLink(item) {
-                    
+                    KakeiboDetailView(testString: item)
                 }
             }
         }

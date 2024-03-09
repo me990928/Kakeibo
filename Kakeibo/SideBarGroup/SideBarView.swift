@@ -45,12 +45,18 @@ struct SideBarView: View {
                 }
                 
             }.navigationDestination(for: String.self) { Hashable in
+                
+                if Hashable == "Start" {
+                    ContentBarView(testVM: testVM, selectDate: "1999/09")
+                }
+                
                 if Hashable == "ALL" {
                     Text("ALL")
                 }else{
                     ContentBarView(testVM: testVM, selectDate: Hashable)
                 }
             }
+        }.onAppear(){
         }
     }
 }
