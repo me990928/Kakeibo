@@ -26,6 +26,10 @@
 		D21CC9702B91C4AB00A91864 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CC96F2B91C4AB00A91864 /* SideBarView.swift */; };
 		D21CC9722B91C61200A91864 /* ContentBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CC9712B91C61200A91864 /* ContentBarView.swift */; };
 		D28A905C2B9BE95800D3617D /* KakeiboDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28A905B2B9BE95800D3617D /* KakeiboDetailView.swift */; };
+		D28A90602B9C056700D3617D /* UserRegistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28A905F2B9C056700D3617D /* UserRegistView.swift */; };
+		D28A90632B9C058600D3617D /* UserLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28A90622B9C058600D3617D /* UserLoginView.swift */; };
+		D28A90682B9C0D2200D3617D /* UserSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28A90672B9C0D2200D3617D /* UserSheetViewModel.swift */; };
+		D28A906A2B9C0D5500D3617D /* UserSheetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28A90692B9C0D5500D3617D /* UserSheetModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		D21CC96F2B91C4AB00A91864 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
 		D21CC9712B91C61200A91864 /* ContentBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBarView.swift; sourceTree = "<group>"; };
 		D28A905B2B9BE95800D3617D /* KakeiboDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakeiboDetailView.swift; sourceTree = "<group>"; };
+		D28A905F2B9C056700D3617D /* UserRegistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistView.swift; sourceTree = "<group>"; };
+		D28A90622B9C058600D3617D /* UserLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginView.swift; sourceTree = "<group>"; };
+		D28A90672B9C0D2200D3617D /* UserSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSheetViewModel.swift; sourceTree = "<group>"; };
+		D28A90692B9C0D5500D3617D /* UserSheetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSheetModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,7 @@
 		D21CC9212B8D70DA00A91864 /* Kakeibo */ = {
 			isa = PBXGroup;
 			children = (
+				D28A905D2B9C054300D3617D /* Mneu */,
 				D21CC95A2B91A98500A91864 /* TestData */,
 				D21CC9552B8D7E6600A91864 /* Tools */,
 				D21CC9222B8D70DA00A91864 /* KakeiboApp.swift */,
@@ -211,6 +220,25 @@
 				D21CC9652B91C2FD00A91864 /* MyTools.swift */,
 			);
 			name = Tools;
+			sourceTree = "<group>";
+		};
+		D28A905D2B9C054300D3617D /* Mneu */ = {
+			isa = PBXGroup;
+			children = (
+				D28A905E2B9C055200D3617D /* User */,
+			);
+			path = Mneu;
+			sourceTree = "<group>";
+		};
+		D28A905E2B9C055200D3617D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				D28A905F2B9C056700D3617D /* UserRegistView.swift */,
+				D28A90672B9C0D2200D3617D /* UserSheetViewModel.swift */,
+				D28A90622B9C058600D3617D /* UserLoginView.swift */,
+				D28A90692B9C0D5500D3617D /* UserSheetModel.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D28A90632B9C058600D3617D /* UserLoginView.swift in Sources */,
 				D21CC9662B91C2FD00A91864 /* DataCRUD.swift in Sources */,
 				D21CC9542B8D760400A91864 /* KakeiboModel.swift in Sources */,
 				D21CC9722B91C61200A91864 /* ContentBarView.swift in Sources */,
@@ -350,7 +379,10 @@
 				D21CC9572B8D7E8500A91864 /* DataCRUD.swift in Sources */,
 				D21CC9252B8D70DA00A91864 /* ContentView.swift in Sources */,
 				D21CC9702B91C4AB00A91864 /* SideBarView.swift in Sources */,
+				D28A90602B9C056700D3617D /* UserRegistView.swift in Sources */,
+				D28A90682B9C0D2200D3617D /* UserSheetViewModel.swift in Sources */,
 				D21CC95C2B91A99C00A91864 /* TestModel.swift in Sources */,
+				D28A906A2B9C0D5500D3617D /* UserSheetModel.swift in Sources */,
 				D21CC9272B8D70DA00A91864 /* Item.swift in Sources */,
 				D21CC95E2B91AE3400A91864 /* TestViewModel.swift in Sources */,
 				D21CC9232B8D70DA00A91864 /* KakeiboApp.swift in Sources */,

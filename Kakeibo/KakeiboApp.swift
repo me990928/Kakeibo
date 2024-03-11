@@ -10,6 +10,9 @@ import SwiftData
 
 @main
 struct KakeiboApp: App {
+    
+    @State var registUserFlag: Bool = false
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -29,8 +32,18 @@ struct KakeiboApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().sheet(isPresented: $registUserFlag) {
+                UserRegistView(flag: $registUserFlag)
+            }
         }
         .modelContainer(sharedModelContainer)
+        .commands {
+            CommandMenu("Custom Menu") {
+                Button("Custom Action"){
+                    print("Create user.")
+                    self.registUserFlag.toggle()
+                }.keyboardShortcut("U", modifiers: [.command, .option])
+            }
+        }
     }
 }
