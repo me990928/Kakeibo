@@ -20,6 +20,7 @@ struct KakeiboApp: App {
             KakeiboLargeSmallCategory.self,
             LargeCategory.self,
             SmallCategory.self,
+            Users.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -38,8 +39,8 @@ struct KakeiboApp: App {
         }
         .modelContainer(sharedModelContainer)
         .commands {
-            CommandMenu("Custom Menu") {
-                Button("Custom Action"){
+            CommandMenu("User") {
+                Button("Regist User"){
                     print("Create user.")
                     self.registUserFlag.toggle()
                 }.keyboardShortcut("U", modifiers: [.command, .option])
